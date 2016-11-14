@@ -1,2 +1,2 @@
 # 42_libft
-42 libft project
+42 libft
