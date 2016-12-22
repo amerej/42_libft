@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_exit.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aditsch <aditsch@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/11 01:26:39 by aditsch           #+#    #+#             */
-/*   Updated: 2016/12/22 16:45:41 by aditsch          ###   ########.fr       */
+/*   Created: 2016/12/16 10:45:34 by aditsch           #+#    #+#             */
+/*   Updated: 2016/12/16 10:49:59 by aditsch          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(const char *s, int fd)
+void	ft_exit(void)
 {
-	if (s)
-		write(fd, s, ft_strlen(s));
+	exit(1);
 }

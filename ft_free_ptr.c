@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_free_ptr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aditsch <aditsch@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/11 01:26:39 by aditsch           #+#    #+#             */
-/*   Updated: 2016/12/22 16:45:41 by aditsch          ###   ########.fr       */
+/*   Created: 2016/12/16 11:38:03 by aditsch           #+#    #+#             */
+/*   Updated: 2016/12/22 17:11:17 by aditsch          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(const char *s, int fd)
+void	ft_free_ptr(void *ptr)
 {
-	if (s)
-		write(fd, s, ft_strlen(s));
+	if (ptr)
+	{
+		free(ptr);
+		ptr = NULL;
+	}
 }
