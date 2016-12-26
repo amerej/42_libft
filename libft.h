@@ -6,7 +6,7 @@
 /*   By: aditsch <aditsch@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 01:29:29 by aditsch           #+#    #+#             */
-/*   Updated: 2016/12/22 17:21:48 by aditsch          ###   ########.fr       */
+/*   Updated: 2016/12/26 04:18:15 by amerej           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_list_push_back(t_list **begin_list, t_list *elem);
 int					ft_list_size(t_list *list);
 int					get_next_line(int const fd, char **line);
-void				ft_exit(void);
-void				ft_exit_message(char *message);
+void				ft_exit_error(void);
+void				ft_exit_error_str(char *message);
 void				ft_free_ptr(void *ptr);
 #endif
