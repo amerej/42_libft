@@ -6,7 +6,7 @@
 /*   By: aditsch <aditsch@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 01:27:23 by aditsch           #+#    #+#             */
-/*   Updated: 2017/01/13 00:22:55 by amerej           ###   ########.fr       */
+/*   Updated: 2017/01/13 00:33:17 by amerej           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,14 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-	char	*tmp;
+	size_t	i;
 
-	tmp = dst;
-	while (*dst++ == *src++)
-		;
-	return (tmp);
+	i = 0;
+	while (src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	return (dst);
 }
